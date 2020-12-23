@@ -1,0 +1,51 @@
+homebrew_installed_packages:
+  - watch
+  - git
+  - go
+  - molecule
+  - minikube
+  - terraform
+  - packer
+  - kubecfg
+
+homebrew_cask_apps:
+  - docker
+  - firefox
+  - google-chrome
+  - transmit
+  - vagrant
+  - visual-studio-code
+  - google-backup-and-sync
+  - iterm2
+  - vmware-fusion
+  - bbedit
+
+
+mas_installed_apps:
+  - { id: 411643860, name: "DaisyDisk" }
+  - { id: 462054704, name: "Microsoft Word" }
+  - { id: 985367838, name: "Microsoft Outlook" }
+  - { id: 784801555, name: "Microsoft OneNote" }
+  - { id: 462058435, name: "Microsoft Excel" }
+  - { id: 462062816, name: "Microsoft PowerPoint" }
+  - { id: 1295203466, name: "Microsoft Remote Desktop" }
+  - { id: 823766827, name: "Microsoft OneDrive" }
+  - { id: 1176895641, name: "Readdle Spark" }
+  - { id: 1319778037, name: "iStat Menus" }
+  - { id: 1474276998, name: "HP Smart for Desktop" }
+  - { id: 972028355, name: "Micro Snitch" }
+  - { id: 904280696, name: "Things 3" }
+  - { id: 1142578753, name: "Omnigraffle 7" }
+  - { id: 1333542190, name: "1Password 7" }
+  - { id: 406056744, name: "Evernote" }
+  - { id: 824183456, name: "Affinity Photo" }
+  - { id: 824171161, name: "Affinity Designer" }
+  - { id: 424389933, name: "Final Cut Pro" }
+  - { id: 424390742, name: "Compressor" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 434290957, name: "Motion" }
+  - { id: 485812721, name: "TweetDeck" }
+  - { id: 1481669779, name: "Evernote Web Clipper" }
+  - { id: 1455214828, name: "MQTT Explorer" }
