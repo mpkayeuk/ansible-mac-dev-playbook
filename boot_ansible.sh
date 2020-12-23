@@ -22,6 +22,10 @@ chmod 700 ~/.ssh
 cp /Volumes/Install\ macOS\ Big\ Sur/id_rsa* ~/.ssh
 chmod 600 ~/.ssh/id_rsa*
 
+# Configure my git global parameters
+git config --global user.name "Mark Kaye"
+git config --global user.email mark@kaye.co
+
 # Create some basic directories to get stuff done
 mkdir -p ~/Development/ansible
 
