@@ -44,3 +44,5 @@ ansible-galaxy install -r requirements.yml
 
 # Let's go!
 echo "Ready to rock and roll!  Run the playbook."
+cd ~/Development/ansible/mac-dev-playbook
+ansible-playbook main.yml -i inventory --ask-become-pass
