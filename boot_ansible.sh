@@ -11,18 +11,22 @@
 #######################################################################
 
 # Start by installing Homebrew
+echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Use Homebrew to install Ansible
+echo "Installing Ansible"
 brew install ansible
 
 # Copy my SSH keypair
+echo "Copying SSH keys"
 mkdir ~/.ssh
 chmod 700 ~/.ssh
 cp /Volumes/Install\ macOS\ Big\ Sur/id_rsa* ~/.ssh
 chmod 600 ~/.ssh/id_rsa*
 
 # Configure my git global parameters
+echo "Configure git global parameters"
 git config --global user.name "Mark Kaye"
 git config --global user.email mark@kaye.co
 
@@ -34,6 +38,7 @@ cd ~/Development/ansible
 git clone git@github.com:mpkayeuk/mac-dev-playbook.git
 
 # Download the playbook requirements
+echo "Downloading the playbook requirements"
 cd ~/Development/ansible/mac-dev-playbook
 ansible-galaxy install -r requirements.yml
 
