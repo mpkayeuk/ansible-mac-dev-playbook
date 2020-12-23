@@ -32,7 +32,7 @@
     - role: geerlingguy.mas
       when: mas_installed_apps
       tags: ['mas']
-    - role: drew-kun/ansible-macdock
+    - role: ansible-macdock
       tags: ['dock']
 
   tasks:
