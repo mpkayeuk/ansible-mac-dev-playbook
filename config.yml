@@ -50,5 +50,3 @@ mas_installed_apps:
   - { id: 485812721, name: "TweetDeck" }
   - { id: 1481669779, name: "Evernote Web Clipper" }
   - { id: 1455214828, name: "MQTT Explorer" }
-
-  mas_email: mark@kaye.co

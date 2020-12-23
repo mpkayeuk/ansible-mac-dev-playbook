@@ -5,8 +5,11 @@
     - default.config.yml
 
   vars_prompt:
+    - name: mas_email
+      prompt: Enter Apple ID
+
     - name: mas_password
-      prompt: Enter the Apple ID password
+      prompt: Enter Apple ID password
 
   pre_tasks:
     - include_vars: "{{ item }}"
