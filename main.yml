@@ -16,6 +16,14 @@
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
       tags: ['always']
+      
+    - name: Fix brew cask issue
+      get_url:
+        url: "{{ item.from }}"
+        dest: "{{ item.to }}"
+      with_items:
+        - { from: 'https://raw.githubusercontent.com/ansible-collections/community.general/2980440bafdf52091555c148f940c856c3807015/plugins/modules/packaging/os/homebrew_cask.py', to: '/usr/local/Cellar/ansible/2.10.4/libexec/lib/python3.9/site-packages/ansible_collections/community/general/plugins/modules/packaging/os/homebrew_cask.py' }
+        - { from: 'https://raw.githubusercontent.com/ansible-collections/community.general/2980440bafdf52091555c148f940c856c3807015/plugins/modules/packaging/os/homebrew_cask.py', to: '/usr/local/Cellar/ansible/2.10.4/libexec/lib/python3.9/site-packages/ansible_collections/community/general/plugins/modules/homebrew_cask.py' }
 
   roles:
     - role: geerlingguy.homebrew
@@ -28,13 +36,6 @@
       tags: ['mas']
 
   tasks:
-    - name: Fix brew cask issue
-      get_url:
-        url: "{{ item.from }}"
-        dest: "{{ item.to }}"
-      with_items:
-        - { from: 'https://raw.githubusercontent.com/ansible-collections/community.general/2980440bafdf52091555c148f940c856c3807015/plugins/modules/packaging/os/homebrew_cask.py', to: '/usr/local/Cellar/ansible/2.10.4/libexec/lib/python3.9/site-packages/ansible_collections/community/general/plugins/modules/packaging/os/homebrew_cask.py' }
-        - { from: 'https://raw.githubusercontent.com/ansible-collections/community.general/2980440bafdf52091555c148f940c856c3807015/plugins/modules/packaging/os/homebrew_cask.py', to: '/usr/local/Cellar/ansible/2.10.4/libexec/lib/python3.9/site-packages/ansible_collections/community/general/plugins/modules/homebrew_cask.py' }
     - include_tasks: tasks/ansible-setup.yml
 
     - include_tasks: tasks/sudoers.yml
