@@ -10,9 +10,6 @@
 #        Date: 20201223 19:07 GMT
 #######################################################################
 
-# Install OhMyZsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
 # Install Homebrew
 echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -20,6 +17,9 @@ echo "Installing Homebrew"
 # Use Homebrew to install Ansible
 echo "Installing Ansible"
 brew install ansible
+
+# Install OhMyZsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Copy my SSH keypair
 echo "Copying SSH keys"
