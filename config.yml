@@ -1,3 +1,4 @@
+configure_dotfiles: no
 homebrew_installed_packages:
   - watch
   - git
