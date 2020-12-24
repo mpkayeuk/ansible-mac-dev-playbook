@@ -12,6 +12,7 @@ homebrew_installed_packages:
   - iperf
   - pv
   - kubernetes-cli
+  - java
 
 homebrew_cask_apps:
   - docker
