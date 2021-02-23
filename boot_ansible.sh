@@ -14,6 +14,12 @@
 echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+brew install pyenv
+pyenv install 3.9.1
+pyenv global 3.9.1
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+source ~/.zshrc
+
 # Use Homebrew to install Ansible
 echo "Installing Ansible"
 brew install ansible

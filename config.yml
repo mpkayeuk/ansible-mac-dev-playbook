@@ -14,6 +14,9 @@ homebrew_installed_packages:
   - kubernetes-cli
   - ruby
   - node
+  - helm
+  - graphviz
+  - pyenv
 
 homebrew_cask_apps:
   - docker
@@ -24,7 +27,14 @@ homebrew_cask_apps:
   - google-backup-and-sync
   - iterm2
   - vmware-fusion
+  - vagrant
   - bbedit
+  - omnigraffle
+  - microsoft-teams
+  - skype
+  - virtualbox
+  - garagesale
+  - datagrip
 
 mas_signin_dialog: yes
 mas_installed_apps:
@@ -41,7 +51,6 @@ mas_installed_apps:
   - { id: 1474276998, name: "HP Smart for Desktop" }
   - { id: 972028355, name: "Micro Snitch" }
   - { id: 904280696, name: "Things 3" }
-  - { id: 1142578753, name: "Omnigraffle 7" }
   - { id: 1333542190, name: "1Password 7" }
   - { id: 406056744, name: "Evernote" }
   - { id: 824183456, name: "Affinity Photo" }
@@ -52,6 +61,10 @@ mas_installed_apps:
   - { id: 1481669779, name: "Evernote Web Clipper" }
   - { id: 1455214828, name: "MQTT Explorer" }
   - { id: 1436522307, name: "Transmit 5" }
+  - { id: 1282504627, name: "Mimeo Photos" }
+  - { id: 1404636482, name: "Motif" }
+  - { id: 803453959, name: "Slack" }
+  - { id: 823766827, name: "OneDrive" }
 
 gem_packages:
   - name: bundler
@@ -59,9 +72,12 @@ gem_packages:
   - name: jekyll
     state: present
 
-npm_packages:
-  - name: gatsby-cli
-    state: present
+pip_packages:
+  - name: diagrams
+  - name: blockdiag
+  - name: XlsxWriter
+  - name: pyyaml
+  - name: atlassian-python-api
 
 post_provision_tasks:
   - tasks/post-install.yml
