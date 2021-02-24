@@ -27,7 +27,6 @@ homebrew_cask_apps:
   - google-backup-and-sync
   - iterm2
   - vmware-fusion
-  - vagrant
   - bbedit
   - omnigraffle
   - microsoft-teams
