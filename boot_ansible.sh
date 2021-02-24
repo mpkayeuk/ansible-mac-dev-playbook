@@ -22,7 +22,7 @@ source ~/.zshrc
 
 # Use Homebrew to install Ansible
 echo "Installing Ansible"
-brew install ansible
+brew install ansible@2.9
 
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
