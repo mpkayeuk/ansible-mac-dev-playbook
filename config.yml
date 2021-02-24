@@ -66,12 +66,6 @@ mas_installed_apps:
   - { id: 803453959, name: "Slack" }
   - { id: 823766827, name: "OneDrive" }
 
-gem_packages:
-  - name: bundler
-    state: present
-  - name: jekyll
-    state: present
-
 pip_packages:
   - name: diagrams
   - name: blockdiag
