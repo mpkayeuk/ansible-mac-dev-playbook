@@ -27,7 +27,7 @@ pyenv global $(pyenv install --list | grep -v - | grep -v b | grep -v a | grep -
 
 # Upgrade Pip
 echo "Upgrading Pip"
-sudo pip3 install --upgrade pip
+sudo pip install --upgrade pip
 
 # Use Homebrew to install Ansible
 echo "Installing Ansible"
