@@ -64,6 +64,7 @@ mas_installed_apps:
   - { id: 1404636482, name: "Motif" }
   - { id: 803453959, name: "Slack" }
   - { id: 823766827, name: "OneDrive" }
+  - { id: 424389933, name: "Final Cut Pro" }
 
 pip_packages:
   - name: diagrams
