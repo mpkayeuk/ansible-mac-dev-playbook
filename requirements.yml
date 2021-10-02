@@ -1,6 +1,5 @@
 ---
 - name: geerlingguy.dotfiles
-- name: geerlingguy.mac.homebrew
 - name: geerlingguy.mas
 - src: git@github.com:drew-kun/ansible-macdock.git
   scm: git
