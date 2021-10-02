@@ -27,7 +27,7 @@ echo "Installing Homebrew"
 brew install pyenv
 pyenv install $(pyenv install --list | grep -v - | grep -v b | grep -v a | grep -v miniforge | grep -v rc | tail -1)
 pyenv global $(pyenv install --list | grep -v - | grep -v b | grep -v a | grep -v miniforge | grep -v rc | tail -1)
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init --path)"\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 source ~/.zshrc
 
 # Upgrade Pip
