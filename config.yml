@@ -24,7 +24,7 @@ homebrew_cask_apps:
   - google-chrome
   - vagrant
   - visual-studio-code
-  - google-backup-and-sync
+  - google-drive
   - iterm2
   - vmware-fusion
   - bbedit
