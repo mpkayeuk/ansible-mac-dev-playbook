@@ -20,9 +20,13 @@ pyenv global $(pyenv install --list | grep -v - | grep -v b | grep -v a | grep -
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 source ~/.zshrc
 
-# Use Homebrew to install Ansible
+# Upgrade Pip
+echo "Upgrading Pip"
+sudo pip3 install --upgrade pip
+
+# Use Pip to install Ansible
 echo "Installing Ansible"
-brew install ansible
+pip3 install ansible
 
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
