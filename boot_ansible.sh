@@ -10,9 +10,6 @@
 #        Date: 20201223 19:07 GMT
 #######################################################################
 
-# Install OhMyZsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
 # Copy my SSH keypair
 echo "Copying SSH keys"
 mkdir ~/.ssh
@@ -27,8 +24,6 @@ echo "Installing Homebrew"
 brew install pyenv
 pyenv install $(pyenv install --list | grep -v - | grep -v b | grep -v a | grep -v miniforge | grep -v rc | tail -1)
 pyenv global $(pyenv install --list | grep -v - | grep -v b | grep -v a | grep -v miniforge | grep -v rc | tail -1)
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init --path)"\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
-source ~/.zshrc
 
 # Upgrade Pip
 echo "Upgrading Pip"
@@ -42,6 +37,14 @@ brew install ansible
 echo "Configure git global parameters"
 git config --global user.name "Mark Kaye"
 git config --global user.email mark@kaye.co
+
+# Install OhMyZsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+# Modify ZSH environment for pyenv
+echo "Adding pyenv logic to .zshrc"
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init --path)"\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+source ~/.zshrc
 
 # Create some basic directories to get stuff done
 mkdir -p ~/Development/ansible
