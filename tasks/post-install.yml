@@ -1,5 +1,0 @@
-- name: Update $PATH for ruby
-  lineinfile:
-    dest: ~/.zshrc
-    line: export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.2/bin:$PATH" >> ~/.zshrc
-    owner: mark
