@@ -24,9 +24,9 @@ source ~/.zshrc
 echo "Upgrading Pip"
 sudo pip3 install --upgrade pip
 
-# Use Pip to install Ansible
+# Use Homebrew to install Ansible
 echo "Installing Ansible"
-pip3 install ansible
+brew install ansible
 
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
