@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 #######################################################################
 # Script Name: boot_ansible.sh
 # Description: This script installs my Mac development machine
