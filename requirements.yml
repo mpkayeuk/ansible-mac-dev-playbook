@@ -1,15 +1,6 @@
 ---
-<<<<<<< HEAD
 - name: geerlingguy.dotfiles
 - name: geerlingguy.homebrew
 - name: geerlingguy.mas
 - src: git@github.com:drew-kun/ansible-macdock.git
   scm: git
-=======
-roles:
-  - name: elliotweiser.osx-command-line-tools
-  - name: geerlingguy.dotfiles
-
-collections:
-  - name: geerlingguy.mac
->>>>>>> ce79f51bbb6bdea097e315a96b6d48cfff2ffe3e
