@@ -10,6 +10,16 @@
 #        Date: 20201223 19:07 GMT
 #######################################################################
 
+# Install OhMyZsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+# Copy my SSH keypair
+echo "Copying SSH keys"
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+cp /Volumes/Install\ macOS\ Big\ Sur/id_rsa* ~/.ssh
+chmod 600 ~/.ssh/id_rsa*
+
 # Install Homebrew
 echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -27,16 +37,6 @@ sudo pip3 install --upgrade pip
 # Use Homebrew to install Ansible
 echo "Installing Ansible"
 brew install ansible
-
-# Install OhMyZsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
-# Copy my SSH keypair
-echo "Copying SSH keys"
-mkdir ~/.ssh
-chmod 700 ~/.ssh
-cp /Volumes/Install\ macOS\ Big\ Sur/id_rsa* ~/.ssh
-chmod 600 ~/.ssh/id_rsa*
 
 # Configure my git global parameters
 echo "Configure git global parameters"
