@@ -4,3 +4,6 @@
 - name: geerlingguy.mas
 - src: git@github.com:drew-kun/ansible-macdock.git
   scm: git
+
+collections:
+  - name: geerlingguy.mac
