@@ -2,7 +2,7 @@ configure_dotfiles: true
 configure_terminal: false
 configure_osx: true
 
-dotfiles_repo: https://github.com/mpkayeuk/dotfiles.git
+dotfiles_repo: git@github.com:mpkayeuk/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/ansible/dotfiles
 dotfiles_files:
@@ -28,19 +28,14 @@ dockitems_remove:
 dockitems_persist:
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
-    pos: 2
   - name: "Google Chrome"
     path: "/Applications/Google Chrome.app/"
-    pos: 2
   - name: "iTerm"
     path: "/Applications/iTerm.app/"
-    pos: 2
   - name: "VMware Fusion"
     path: "/Applications/VMware Fusion.app/"
-    pos: 2
   - name: "Spark"
     path: "/Applications/Spark.app/"
-    pos: 2
     
 
 homebrew_installed_packages:
