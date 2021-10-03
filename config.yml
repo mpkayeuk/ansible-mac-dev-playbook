@@ -1,4 +1,7 @@
-configure_dotfiles: no
+configure_dotfiles: false
+configure_terminal: false
+configure_osx: false
+
 homebrew_installed_packages:
   - watch
   - git
