@@ -1,6 +1,9 @@
 configure_dotfiles: true
 configure_terminal: false
 configure_osx: true
+dotfiles_files:
+  - .osx
+  
 configure_dock: true
 dockitems_remove:
   - Launchpad
@@ -54,7 +57,8 @@ homebrew_cask_apps:
   - garagesale
   - datagrip
 
-mas_signin_dialog: yes
+mas_email: "mark@kaye.co"
+mas_password: "Brisingr!!1"
 mas_installed_apps:
   - { id: 411643860, name: "DaisyDisk" }
   - { id: 462054704, name: "Microsoft Word" }
@@ -94,3 +98,5 @@ pip_packages:
 
 post_provision_tasks:
   - tasks/post-install.yml
+
+osx_script: "~/.osx --no-restart"
