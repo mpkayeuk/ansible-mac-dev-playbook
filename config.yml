@@ -26,21 +26,30 @@ dockitems_remove:
   - News
   
 dockitems_persist:
-  - name: "Visual Studio Code"
-    path: "/Applications/Visual Studio Code.app/"
-    pos: 4
-  - name: "Google Chrome"
-    path: "/Applications/Google Chrome.app/"
-    pos: 2
-  - name: "iTerm"
-    path: "/Applications/iTerm.app/"
-    pos: 3
-  - name: "VMware Fusion"
-    path: "/Applications/VMware Fusion.app/"
-    pos: 5
   - name: "Spark"
-    path: "/Applications/Spark.app/"
+    path: "/Applications/Spark.app"
     pos: 1
+  - name: "Safari"
+    path: "/Applications/Safari.app"
+    pos: 10
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app"
+    pos: 15
+  - name: "iTerm"
+    path: "/Applications/iTerm.app"
+    pos: 20
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app"
+    pos: 25
+  - name: "VMware Fusion"
+    path: "/Applications/VMware Fusion.app"
+    pos: 90
+  - name: "Messages"
+    path: "/Applications/Messages.app"
+    pos: 95
+  - name: "System Preferences"
+    path: "/Applications/System Preferences.app"
+    pos: 100
     
 
 homebrew_installed_packages:
@@ -76,7 +85,6 @@ homebrew_cask_apps:
   - microsoft-teams
   - skype
   - virtualbox
-  - garagesale
   - datagrip
 
 mas_email: ""
