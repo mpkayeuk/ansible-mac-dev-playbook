@@ -1,6 +1,10 @@
 configure_dotfiles: true
 configure_terminal: false
 configure_osx: true
+
+dotfiles_repo: https://github.com/mpkayeuk/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Development/ansible/dotfiles
 dotfiles_files:
   - .osx
   
