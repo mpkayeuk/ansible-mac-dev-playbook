@@ -28,6 +28,16 @@ dockitems_persist:
   - name: "Google Chrome"
     path: "/Applications/Google Chrome.app/"
     pos: 3
+  - name: "iTerm"
+    path: "/Applications/iTerm.app/"
+    pos: 5
+  - name: "VMware Fusion"
+    path: "/Applications/VMware Fusion.app/"
+    pos: 6
+  - name: "Spark"
+    path: "/Applications/Spark.app/"
+    pos: 2
+    
 
 homebrew_installed_packages:
   - watch
