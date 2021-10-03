@@ -75,8 +75,8 @@ homebrew_cask_apps:
   - garagesale
   - datagrip
 
-mas_email: "mark@kaye.co"
-mas_password: "Brisingr!!1"
+mas_email: ""
+mas_password: ""
 mas_installed_apps:
   - { id: 411643860, name: "DaisyDisk" }
   - { id: 462054704, name: "Microsoft Word" }
