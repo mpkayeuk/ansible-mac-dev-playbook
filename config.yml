@@ -1,6 +1,22 @@
 configure_dotfiles: false
 configure_terminal: false
 configure_osx: false
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Notes
+  - Reminders
+  - Contacts
+  - Calendar
+  - FaceTime
+  - Maps
+  - Photos
+  - Mail
+  - Music
+  - Podcasts
+  - App Store
+  - News
 
 homebrew_installed_packages:
   - watch
