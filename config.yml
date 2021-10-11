@@ -29,27 +29,33 @@ dockitems_persist:
   - name: "Spark"
     path: "/Applications/Spark.app"
     pos: 1
+  - name: "Microsoft Outlook"
+    path: "/Applications/Microsoft Outlook.app"
+    pos: 2
   - name: "Safari"
     path: "/Applications/Safari.app"
-    pos: 10
+    pos: 3
   - name: "Google Chrome"
     path: "/Applications/Google Chrome.app"
-    pos: 15
+    pos: 4
+  - name: "Microsoft Teams"
+    path: "/Applications/Microsoft Teams.app"
+    pos: 5
   - name: "iTerm"
     path: "/Applications/iTerm.app"
-    pos: 20
+    pos: 6
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app"
-    pos: 25
+    pos: 7
   - name: "VMware Fusion"
     path: "/Applications/VMware Fusion.app"
-    pos: 90
+    pos: 8
   - name: "Messages"
     path: "/Applications/Messages.app"
-    pos: 95
+    pos: 9
   - name: "System Preferences"
     path: "/Applications/System Preferences.app"
-    pos: 100
+    pos: 10
     
 
 homebrew_installed_packages:
@@ -64,7 +70,6 @@ homebrew_installed_packages:
   - wget
   - iperf
   - pv
-  - kubernetes-cli
   - ruby
   - node
   - helm
