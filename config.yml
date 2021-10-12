@@ -32,11 +32,11 @@ dockitems_persist:
   - name: "Microsoft Outlook"
     path: "/Applications/Microsoft Outlook.app"
     pos: 2
-  - name: "Safari"
-    path: "/Applications/Safari.app"
-    pos: 3
   - name: "Things"
     path: "/Applications/Things.app"
+    pos: 3
+  - name: "Safari"
+    path: "/Applications/Safari.app"
     pos: 4
   - name: "Google Chrome"
     path: "/Applications/Google Chrome.app"
