@@ -134,6 +134,7 @@ pip_packages:
   - name: blockdiag
   - name: XlsxWriter
   - name: pyyaml
+  - name: openpyxl
   - name: atlassian-python-api
 
 post_provision_tasks:
