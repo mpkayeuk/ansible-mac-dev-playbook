@@ -118,12 +118,6 @@ mas_installed_apps:
   - { id: 823766827, name: "OneDrive" }
   - { id: 424389933, name: "Final Cut Pro" }
   - { id: 407963104, name: "Pixelmator Classic" }
-  
-mas_uninstalled_apps:
-  - { id: 1481669779, name: "Evernote Web Clipper" }
-  - { id: 406056744, name: "Evernote" }
-  - { id: 1282504627, name: "Mimeo Photos" }
-  - { id: 1404636482, name: "Motif" }
 
 pip_packages:
   - name: diagrams
