@@ -6,20 +6,22 @@
 #
 #      Author: Mark Kaye
 #       Email: mark@kaye.co
-#     Version: 1.0
-#        Date: 20201223 19:07 GMT
+#     Version: 1.1
+#        Date: 20220116 15:28 GMT
 #######################################################################
 
 # Copy my SSH keypair
 echo "Copying SSH keys"
 mkdir ~/.ssh
 chmod 700 ~/.ssh
-cp /Volumes/Install\ macOS\ Big\ Sur/id_rsa* ~/.ssh
+cp /Volumes/Install\ macOS\ Monterey/id_rsa* ~/.ssh
 chmod 600 ~/.ssh/id_rsa*
 
 # Install Homebrew
 echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mark/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install pyenv
 pyenv install $(pyenv install --list | grep -v - | grep -v b | grep -v a | grep -v miniforge | grep -v rc | tail -1)
@@ -28,6 +30,9 @@ pyenv global $(pyenv install --list | grep -v - | grep -v b | grep -v a | grep -
 # Upgrade Pip
 echo "Upgrading Pip"
 sudo pip install --upgrade pip
+
+# Install Rosetta 2
+sudo softwareupdate --install-rosetta --agree-to-license
 
 # Use Homebrew to install Ansible
 echo "Installing Ansible"
