@@ -113,21 +113,23 @@ mas_installed_apps:
   - { id: 972028355, name: "Micro Snitch" }
   - { id: 904280696, name: "Things 3" }
   - { id: 1333542190, name: "1Password 7" }
-  - { id: 406056744, name: "Evernote" }
   - { id: 824183456, name: "Affinity Photo" }
   - { id: 824171161, name: "Affinity Designer" }
   - { id: 409201541, name: "Pages" }
   - { id: 409203825, name: "Numbers" }
   - { id: 409183694, name: "Keynote" }
-  - { id: 1481669779, name: "Evernote Web Clipper" }
   - { id: 1455214828, name: "MQTT Explorer" }
   - { id: 1436522307, name: "Transmit 5" }
-  - { id: 1282504627, name: "Mimeo Photos" }
-  - { id: 1404636482, name: "Motif" }
   - { id: 803453959, name: "Slack" }
   - { id: 823766827, name: "OneDrive" }
   - { id: 424389933, name: "Final Cut Pro" }
   - { id: 407963104, name: "Pixelmator Classic" }
+  
+mas_uninstalled_apps:
+  - { id: 1481669779, name: "Evernote Web Clipper" }
+  - { id: 406056744, name: "Evernote" }
+  - { id: 1282504627, name: "Mimeo Photos" }
+  - { id: 1404636482, name: "Motif" }
 
 pip_packages:
   - name: diagrams
