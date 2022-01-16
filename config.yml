@@ -118,7 +118,7 @@ mas_installed_apps:
   - { id: 823766827, name: "OneDrive" }
   - { id: 424389933, name: "Final Cut Pro" }
   - { id: 407963104, name: "Pixelmator Classic" }
-  - { id: }441258766, name: "Magnet" }
+  - { id: 441258766, name: "Magnet" }
 
 pip_packages:
   - name: diagrams
