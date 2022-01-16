@@ -50,15 +50,12 @@ dockitems_persist:
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app"
     pos: 8
-  - name: "VMware Fusion"
-    path: "/Applications/VMware Fusion.app"
-    pos: 9
   - name: "Messages"
     path: "/Applications/Messages.app"
-    pos: 10
+    pos: 9
   - name: "System Preferences"
     path: "/Applications/System Preferences.app"
-    pos: 11
+    pos: 10
     
 
 homebrew_installed_packages:
@@ -84,17 +81,13 @@ homebrew_cask_apps:
   - docker
   - firefox
   - google-chrome
-  - vagrant
   - visual-studio-code
   - google-drive
   - iterm2
-  - vmware-fusion
   - bbedit
   - omnigraffle
   - microsoft-teams
   - skype
-  - virtualbox
-  - datagrip
 
 mas_email: ""
 mas_password: ""
