@@ -76,7 +76,6 @@ homebrew_installed_packages:
   - graphviz
   - pyenv
   - ansible-lint
-  - zoom
 
 homebrew_cask_apps:
   - docker
@@ -89,6 +88,7 @@ homebrew_cask_apps:
   - omnigraffle
   - microsoft-teams
   - skype
+  - zoom
 
 mas_email: ""
 mas_password: ""
