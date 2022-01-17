@@ -76,6 +76,7 @@ homebrew_installed_packages:
   - graphviz
   - pyenv
   - ansible-lint
+  - zoom
 
 homebrew_cask_apps:
   - docker
