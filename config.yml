@@ -1,91 +1,72 @@
-configure_dotfiles: true
+# configure_dotfiles: true
 configure_terminal: false
 configure_osx: true
 
-dotfiles_repo: git@github.com:mpkayeuk/dotfiles.git
-dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/ansible/dotfiles
-dotfiles_files:
-  - .osx
+# dotfiles_repo: git@github.com:mpkayeuk/dotfiles.git
+# dotfiles_repo_accept_hostkey: true
+# dotfiles_repo_local_destination: ~/Development/ansible/dotfiles
+# dotfiles_files:
+#   - .osx
   
-configure_dock: true
-dockitems_remove:
-  - Launchpad
-  - TV
-  - Notes
-  - Reminders
-  - Contacts
-  - Calendar
-  - FaceTime
-  - Maps
-  - Photos
-  - Mail
-  - Music
-  - Podcasts
-  - App Store
-  - News
+# configure_dock: true
+# dockitems_remove:
+#   - Launchpad
+#   - TV
+#   - Notes
+#   - Reminders
+#   - Contacts
+#   - Calendar
+#   - FaceTime
+#   - Maps
+#   - Photos
+#   - Mail
+#   - Music
+#   - Podcasts
+#   - App Store
+#   - News
   
-dockitems_persist:
-  - name: "Spark"
-    path: "/Applications/Spark.app"
-    pos: 1
-  - name: "Microsoft Outlook"
-    path: "/Applications/Microsoft Outlook.app"
-    pos: 2
-  - name: "Things"
-    path: "/Applications/Things.app"
-    pos: 3
-  - name: "Safari"
-    path: "/Applications/Safari.app"
-    pos: 4
-  - name: "Google Chrome"
-    path: "/Applications/Google Chrome.app"
-    pos: 5
-  - name: "Microsoft Teams"
-    path: "/Applications/Microsoft Teams.app"
-    pos: 6
-  - name: "iTerm"
-    path: "/Applications/iTerm.app"
-    pos: 7
-  - name: "Visual Studio Code"
-    path: "/Applications/Visual Studio Code.app"
-    pos: 8
-  - name: "Messages"
-    path: "/Applications/Messages.app"
-    pos: 9
-  - name: "System Preferences"
-    path: "/Applications/System Preferences.app"
-    pos: 10
+# dockitems_persist:
+#   - name: "Spark"
+#     path: "/Applications/Spark.app"
+#     pos: 1
+#   - name: "Microsoft Outlook"
+#     path: "/Applications/Microsoft Outlook.app"
+#     pos: 2
+#   - name: "Things"
+#     path: "/Applications/Things.app"
+#     pos: 3
+#   - name: "Safari"
+#     path: "/Applications/Safari.app"
+#     pos: 4
+#   - name: "Google Chrome"
+#     path: "/Applications/Google Chrome.app"
+#     pos: 5
+#   - name: "Microsoft Teams"
+#     path: "/Applications/Microsoft Teams.app"
+#     pos: 6
+#   - name: "iTerm"
+#     path: "/Applications/iTerm.app"
+#     pos: 7
+#   - name: "Visual Studio Code"
+#     path: "/Applications/Visual Studio Code.app"
+#     pos: 8
+#   - name: "Messages"
+#     path: "/Applications/Messages.app"
+#     pos: 9
+#   - name: "System Preferences"
+#     path: "/Applications/System Preferences.app"
+#     pos: 10
     
 
 homebrew_installed_packages:
   - watch
   - git
-  - go
-  - molecule
-  - minikube
-  - terraform
-  - packer
-  - kubecfg
   - wget
-  - iperf
-  - pv
-  - ruby
-  - node
-  - helm
-  - graphviz
-  - pyenv
-  - ansible-lint
 
 homebrew_cask_apps:
-  - docker
   - firefox
   - google-chrome
-  - visual-studio-code
   - google-drive
-  - iterm2
-  - bbedit
-  - omnigraffle
   - microsoft-teams
   - skype
   - zoom
@@ -94,40 +75,20 @@ mas_email: ""
 mas_password: ""
 mas_upgrade_all_apps: true
 mas_installed_apps:
-  - { id: 411643860, name: "DaisyDisk" }
   - { id: 462054704, name: "Microsoft Word" }
   - { id: 985367838, name: "Microsoft Outlook" }
   - { id: 784801555, name: "Microsoft OneNote" }
   - { id: 462058435, name: "Microsoft Excel" }
   - { id: 462062816, name: "Microsoft PowerPoint" }
-  - { id: 1295203466, name: "Microsoft Remote Desktop" }
   - { id: 823766827, name: "Microsoft OneDrive" }
-  - { id: 1176895641, name: "Readdle Spark" }
-  - { id: 1319778037, name: "iStat Menus" }
   - { id: 1474276998, name: "HP Smart for Desktop" }
   - { id: 972028355, name: "Micro Snitch" }
   - { id: 904280696, name: "Things 3" }
   - { id: 1333542190, name: "1Password 7" }
-  - { id: 824183456, name: "Affinity Photo" }
-  - { id: 824171161, name: "Affinity Designer" }
   - { id: 409201541, name: "Pages" }
   - { id: 409203825, name: "Numbers" }
   - { id: 409183694, name: "Keynote" }
-  - { id: 1455214828, name: "MQTT Explorer" }
-  - { id: 1436522307, name: "Transmit 5" }
-  - { id: 803453959, name: "Slack" }
-  - { id: 823766827, name: "OneDrive" }
   - { id: 424389933, name: "Final Cut Pro" }
-  - { id: 407963104, name: "Pixelmator Classic" }
-  - { id: 441258766, name: "Magnet" }
-
-pip_packages:
-  - name: diagrams
-  - name: blockdiag
-  - name: XlsxWriter
-  - name: pyyaml
-  - name: openpyxl
-  - name: atlassian-python-api
 
 post_provision_tasks:
   - tasks/post-install.yml
