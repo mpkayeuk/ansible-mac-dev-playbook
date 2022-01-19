@@ -13,7 +13,7 @@
 # Download the playbook requirements
 echo "Downloading the playbook requirements"
 cd ~/Development/ansible/mac-dev-playbook
-ansible-galaxy install -r requirements.yml
+ansible-galaxy install --force -r requirements.yml
 
 # Let's go!
 echo "Making sure you have the latest version..."
