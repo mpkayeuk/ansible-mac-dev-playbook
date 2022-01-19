@@ -6,7 +6,7 @@ dotfiles_repo: git@github.com:mpkayeuk/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/ansible/dotfiles
 dotfiles_files:
-  - .osx
+  - .osx-mark
   
 configure_dock: true
 dockitems_remove:
@@ -133,4 +133,4 @@ pip_packages:
 post_provision_tasks:
   - tasks/post-install.yml
 
-osx_script: "~/.osx --no-restart"
+osx_script: "~/.osx-mark --no-restart"
