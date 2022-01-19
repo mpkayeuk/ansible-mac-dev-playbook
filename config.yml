@@ -70,6 +70,7 @@ homebrew_cask_apps:
   - microsoft-teams
   - skype
   - zoom
+  - iterm2
   - aerial
 
 mas_email: ""
