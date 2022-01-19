@@ -1,6 +1,6 @@
-configure_dotfiles: yes
-configure_terminal: yes
-configure_osx: yes
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
 
 dotfiles_repo: git@github.com:mpkayeuk/dotfiles.git
 dotfiles_repo_accept_hostkey: true
