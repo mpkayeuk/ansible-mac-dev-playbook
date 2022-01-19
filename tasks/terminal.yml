@@ -22,7 +22,7 @@
 - name: Ensure custom Terminal profile is set as default.
   command: "{{ item }}"
   with_items:
-    - defaults write com.apple.terminal 'Default Window Settings' -string JJG-Term
-    - defaults write com.apple.terminal 'Startup Window Settings' -string JJG-Term
+    - defaults write com.apple.terminal 'Default Window Settings' -string Homebrew
+    - defaults write com.apple.terminal 'Startup Window Settings' -string Homebrew
   changed_when: false
   when: "'JJG-Term' not in terminal_theme.stdout"

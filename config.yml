@@ -1,5 +1,5 @@
 configure_dotfiles: yes
-configure_terminal: false
+configure_terminal: yes
 configure_osx: yes
 
 dotfiles_repo: git@github.com:mpkayeuk/dotfiles.git
