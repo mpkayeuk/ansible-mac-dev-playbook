@@ -1,12 +1,12 @@
-# configure_dotfiles: true
+configure_dotfiles: false
 configure_terminal: false
-configure_osx: true
+configure_osx: false
 
-# dotfiles_repo: git@github.com:mpkayeuk/dotfiles.git
-# dotfiles_repo_accept_hostkey: true
-# dotfiles_repo_local_destination: ~/Development/ansible/dotfiles
-# dotfiles_files:
-#   - .osx
+dotfiles_repo: git@github.com:mpkayeuk/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Development/ansible/dotfiles
+dotfiles_files:
+  - .osx
   
 # configure_dock: true
 # dockitems_remove:
