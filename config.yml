@@ -133,4 +133,4 @@ pip_packages:
 post_provision_tasks:
   - tasks/post-install.yml
 
-osx_script: "~/.osx-mark --no-restart"
+osx_script: "~/.osx-mark"
