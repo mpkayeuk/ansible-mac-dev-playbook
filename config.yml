@@ -94,4 +94,4 @@ mas_installed_apps:
 post_provision_tasks:
   - tasks/post-install.yml
 
-osx_script: "~/.osx-lenny --no-restart"
+osx_script: "~/.osx-lenny"
