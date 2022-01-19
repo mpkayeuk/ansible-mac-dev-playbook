@@ -7,7 +7,7 @@
 #      Author: Mark Kaye
 #       Email: mark@kaye.co
 #     Version: 1.0
-#        Date: 20201224 12:42 GMT
+#        Date: 20220119 09:34 GMT
 #######################################################################
 
 # Download the playbook requirements
@@ -16,6 +16,8 @@ cd ~/Development/ansible/mac-dev-playbook
 ansible-galaxy install -r requirements.yml
 
 # Let's go!
-echo "Ready to rock and roll!  Run the playbook."
+echo "Making sure you have the latest version..."
 cd ~/Development/ansible/mac-dev-playbook
+git pull
+echo "Ready to rock and roll!  Run the playbook."
 ansible-playbook main.yml -i inventory --ask-become-pass
