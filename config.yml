@@ -77,6 +77,7 @@ homebrew_installed_packages:
   - graphviz
   - pyenv
   - ansible-lint
+  - awscli
 
 homebrew_cask_apps:
   - docker
@@ -122,6 +123,7 @@ mas_installed_apps:
   - { id: 424389933, name: "Final Cut Pro" }
   - { id: 407963104, name: "Pixelmator Classic" }
   - { id: 441258766, name: "Magnet" }
+  - { id: 937984704, name: "Amphetamine" }
 
 pip_packages:
   - name: diagrams
