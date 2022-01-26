@@ -124,6 +124,7 @@ mas_installed_apps:
   - { id: 407963104, name: "Pixelmator Classic" }
   - { id: 441258766, name: "Magnet" }
   - { id: 937984704, name: "Amphetamine" }
+  - { id: 412946682, name: "SubnetCalc" }
 
 pip_packages:
   - name: diagrams
