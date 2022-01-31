@@ -133,6 +133,8 @@ pip_packages:
   - name: pyyaml
   - name: openpyxl
   - name: atlassian-python-api
+  - name: pandas
+  - name: tqdm
 
 post_provision_tasks:
   - tasks/post-install.yml
