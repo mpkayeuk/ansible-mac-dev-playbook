@@ -78,7 +78,6 @@ homebrew_installed_packages:
   - pyenv
   - ansible-lint
   - awscli
-  - openwebstart
 
 homebrew_cask_apps:
   - docker
