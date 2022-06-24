@@ -122,7 +122,7 @@ mas_installed_apps:
   - { id: 803453959, name: "Slack" }
   - { id: 823766827, name: "OneDrive" }
   - { id: 424389933, name: "Final Cut Pro" }
-  - { id: 407963104, name: "Pixelmator Classic" }
+  - { id: 1289583905, name: "Pixelmator Pro" }
   - { id: 441258766, name: "Magnet" }
   - { id: 937984704, name: "Amphetamine" }
   - { id: 412946682, name: "SubnetCalc" }
