@@ -4,7 +4,7 @@ configure_osx: true
 
 dotfiles_repo: git@github.com:mpkayeuk/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ./dotfiles
+dotfiles_repo_local_destination: ~/development/ansible/mac-dev-dotfiles
 dotfiles_files:
   - .osx-mark
   - .zshrc
