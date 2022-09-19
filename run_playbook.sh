@@ -12,12 +12,12 @@
 
 # Download the playbook requirements
 echo "Downloading the playbook requirements"
-cd ~/Development/ansible/mac-dev-playbook
+cd ~/Development/ansible/ansible-mac-dev-playbook
 ansible-galaxy install --force -r requirements.yml
 
 # Let's go!
 echo "Making sure you have the latest version..."
-cd ~/Development/ansible/mac-dev-playbook
+cd ~/Development/ansible/ansible-mac-dev-playbook
 git pull
 echo "Ready to rock and roll!  Run the playbook."
 ansible-playbook main.yml -i inventory --ask-become-pass

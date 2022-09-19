@@ -56,14 +56,14 @@ mkdir -p ~/Development/ansible
 
 # Clone the Mac setup repo
 cd ~/Development/ansible
-git clone git@github.com:mpkayeuk/mac-dev-playbook.git
+git clone git@github.com:mpkayeuk/ansible-mac-dev-playbook.git
 
 # Download the playbook requirements
 echo "Downloading the playbook requirements"
-cd ~/Development/ansible/mac-dev-playbook
+cd ~/Development/ansible/ansible-mac-dev-playbook
 ansible-galaxy install -r requirements.yml
 
 # Let's go!
 echo "Ready to rock and roll!  Run the playbook."
-cd ~/Development/ansible/mac-dev-playbook
+cd ~/Development/ansible/ansible-mac-dev-playbook
 ansible-playbook main.yml -i inventory --ask-become-pass
