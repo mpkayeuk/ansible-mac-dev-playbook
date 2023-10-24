@@ -14,8 +14,10 @@
 echo "Copying SSH keys"
 mkdir ~/.ssh
 chmod 700 ~/.ssh
-cp /Volumes/Install\ macOS\ Monterey/id_rsa* ~/.ssh
+cp /Volumes/Install\ macOS\ Sonoma/ssh/id_rsa* ~/.ssh
+cp /Volumes/Install\ macOS\ Sonoma/ssh/config ~/.ssh
 chmod 600 ~/.ssh/id_rsa*
+chmod 600 ~/.ssh/config
 
 # Install Homebrew
 echo "Installing Homebrew"
