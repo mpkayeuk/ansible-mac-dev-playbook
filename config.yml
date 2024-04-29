@@ -25,6 +25,7 @@ dockitems_remove:
   - Podcasts
   - App Store
   - News
+  - Freeform
   
 dockitems_persist:
   - name: "Things"
