@@ -91,6 +91,7 @@ homebrew_cask_apps:
   - microsoft-teams
   - zoom
   - multipass
+  - jabra-direct
 
 mas_email: ""
 mas_password: ""
